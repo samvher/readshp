@@ -171,8 +171,7 @@ data RecContents =
       recPolZZs           :: [Double],
       recPolZMRange       :: (Double, Double),
       recPolZMs           :: [Double] }
-  -- | RecMultiPatch
-    deriving (Eq, Show)
+  deriving (Eq, Show)
 
 data RecBBox =
   RecBBox {
