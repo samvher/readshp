@@ -12,7 +12,7 @@ module Geometry.Shapefile.ReadDbf ( readDbfFile,
 
 import Control.Monad       ( replicateM )
 import Control.Monad.Loops ( whileM )
-import Data.Binary.Get
+import Data.Binary.Get hiding ( getInt8 )
 
 import qualified Data.ByteString.Lazy as BL
 
