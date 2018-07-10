@@ -23,7 +23,7 @@ library
                        Geometry.Shapefile.ReadShp,
                        Geometry.Shapefile.Types
   other-modules:       Geometry.Shapefile.Internal
-  build-depends:       base >=4.8 && <4.9,
+  build-depends:       base >=4.8 && <4.12,
                        binary,
                        bytestring,
                        data-binary-ieee754,

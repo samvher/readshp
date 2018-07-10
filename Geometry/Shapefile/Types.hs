@@ -7,7 +7,10 @@ Description : Type definitions used by the library. Currently (24 Nov 2015)
 Author      : Sam van Herwaarden <samvherwaarden@gmail.com>
 -}
 
-module Geometry.Shapefile.Types where
+module Geometry.Shapefile.Types(
+  module Geometry.Shapefile.Types,
+  Point
+  ) where
 
 import qualified Data.ByteString as BS
 
@@ -171,8 +174,7 @@ data RecContents =
       recPolZZs           :: [Double],
       recPolZMRange       :: (Double, Double),
       recPolZMs           :: [Double] }
-  -- | RecMultiPatch
-    deriving (Eq, Show)
+  deriving (Eq, Show)
 
 data RecBBox =
   RecBBox {
